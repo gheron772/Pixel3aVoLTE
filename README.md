@@ -63,7 +63,7 @@ B-3. 각 기종별 diag 드라이버는 AOSP 소스에서 /bonito/usb/UsbGadget.
 <br>
 
 ## Special thanks to
-https://github.com/Magisk-Modules-Repo/volte-kr-crosshatch - nuriro  
+https://github.com/Magisk-Modules-Repo/volte-kr-crosshatch - nooriro  
 https://cafe.naver.com/grnf/326870 - daedae
 <br>
 <br>

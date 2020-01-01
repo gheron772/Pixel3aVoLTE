@@ -58,12 +58,12 @@ Magisk-20.1\Magisk-20.1\app\src\main\java\com\topjohnwu\magisk\tasks\MagiskInsta
 boot.img에 magisk를 덮어 쓸때 /sdcard/Download/build_magisk.zip 파일을 가져와 사용한다. 
 [(app-debug.apk)](https://github.com/gheron772/Pixel3aVoLTE/raw/master/files/app-debug.apk)
 
-B-3. 각 기종별 diag 드라이버는 ASOP 소스에서 /bonito/usb/UsbGadget.cpp의 내용을 확인하면 알 수 있다.(기종별 코드명)  
+B-3. 각 기종별 diag 드라이버는 AOSP 소스에서 /bonito/usb/UsbGadget.cpp의 내용을 확인하면 알 수 있다.(기종별 코드명)  
 <br>
 <br>
 
 ## Special thanks to
-https://github.com/Magisk-Modules-Repo/volte-kr-crosshatch - nuriro  
+https://github.com/Magisk-Modules-Repo/volte-kr-crosshatch - nooriro  
 https://cafe.naver.com/grnf/326870 - daedae
 <br>
 <br>

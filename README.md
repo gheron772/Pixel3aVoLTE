@@ -3,8 +3,10 @@
 
 ## 1. 개요
 본 저장소는 Pixel 3a의 VoLTE patch를 위한 방법 및 원리를 설명한다.  
-KT의 경우만 테스트 되었으며 SKT, U+에서 잘 동작하지 않을 경우  
-mcfg_sw.mbn을 각 통신사 파일만 남기도록 수정하여 테스트가 필요하다.  
+통신사별 작업해야 하는 내용은 아래와 같다.
+SKT - OMD등록, rooting, volte 모듈설치  
+KT - OMD등록, rooting, EFS 패치, volte 모듈설치   
+U+ - rooting, EFS 패치, volte 모듈설치  
 <br>
 
 ## 2. 사전준비
@@ -39,9 +41,12 @@ A-3. Pixel 3a modem firmware는 user_agent_template의 내용으로 부터 ims_u
      user_agent_template의 내용은 Google_[MI__ap]_[SW__ap]으로 모델명, 빌드버전이 매핑된다.  
      ims_user_agent의 첫번째 데이터가 TTA-VoLTE/2.0이 아닌경우 VoLTE가 일부 또는 전부 정상적으로 동작하지 않는다.  
 
-A-4. SKT Sim의 경우 user_agent_template를 패치하지 않아도 자동으로 TTA-VoLTE/2.0을 넣어줄 수 도 있다.(확인안됨)  
+A-4. SKT Sim의 경우 user_agent_template를 패치하지 않아도 volte가 작동하며  
+     SKT의 경우에만 모뎀이 자동으로 TTA-VoLTE/2.0을 넣어주거나  
+     SKT volte서버에서 ims_user_agent의 값을 체크하지 않는것으로 추정된다.  
 
-A-5. 본 문서의 내용으로 Pixel 3, Pixel 4, Pixel 4a, *XL도 패치가 될 것으로 예상된다.  
+A-5. 본 문서의 패치방법을 기반으로 Pixel 3, Pixel 4, Pixel 4a도 패치가 될 것으로 예상된다.
+     (모뎀별 드라이버는 기종별 소스에서 확인이 필요하다.)  
 <br>
 <br>
 

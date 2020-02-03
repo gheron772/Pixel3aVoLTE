@@ -3,7 +3,7 @@
 
 ## 1. 개요
 본 저장소는 Pixel 3a의 VoLTE patch를 위한 방법 및 원리를 설명한다.  
-통신사별 작업해야 하는 내용은 아래와 같다.
+통신사별 작업해야 하는 내용은 아래와 같다.  
 SKT - OMD등록, rooting, volte 모듈설치  
 KT - OMD등록, rooting, EFS 패치, volte 모듈설치   
 U+ - rooting, EFS 패치, volte 모듈설치  

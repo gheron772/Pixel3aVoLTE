@@ -48,8 +48,8 @@ A-4. SKT Sim의 경우 user_agent_template를 패치하지 않아도 volte가 �
 A-5. 본 문서의 패치방법을 기반으로 Pixel 3, Pixel 4, Pixel 4a도 패치가 될 것으로 예상된다.  
      maigsk 빌드시 해당 기종에 맞게 소스를 변경하던지 장치관리자에서 9091로 잡힌 장치의 드라이버를 임의로 변경한다.
      ```bash
-"    write /config/usb_gadget/g1/idVendor 0x05C6\n"
-"    write /config/usb_gadget/g1/idProduct 0x9091\n"
+"    write /config/usb_gadget/g1/idVendor 0x05C6\n"  
+"    write /config/usb_gadget/g1/idProduct 0x9091\n"  
      ```  
      (모뎀별 드라이버는 기종별 소스에서 확인이 필요하다.)  
      git clone https://android.googlesource.com/device/google/bonito  

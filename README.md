@@ -61,7 +61,8 @@ A-5. 본 문서의 패치방법을 기반으로 Pixel 3, Pixel 4, Pixel 4a도 �
 
 ## B. 부록2
 B-1. Magisk 소스에 https://github.com/AGagarin/Magisk/commit/0ffa5edd4b52cb002e360f70be075e9544dfcaf7 내용을  
-Magisk-20.1\Magisk-20.1\native\jni\init\magiskrc.h 에 추가 후 빌드하면 diag기능이 활성화 된 magisk를 얻을 수 있다. 
+Magisk-20.1\Magisk-20.1\native\jni\init\magiskrc.h 에 추가 후 빌드하면 diag기능이 활성화 된 magisk를 얻을 수 있다.
+https://github.com/AGagarin/Magisk/commit/4db651f7992cc4d5c138edf5d0a673a0d7de2130 오타 수정 내용까지 적용필요  
 [(build_magisk.zip)](https://github.com/gheron772/Pixel3aVoLTE/raw/master/files/build_magisk.zip)  
 
 B-2. Magisk manager 소스에 아래 내용을

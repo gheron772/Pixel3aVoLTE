@@ -46,16 +46,6 @@ A-4. SKT Sim의 경우 user_agent_template를 패치하지 않아도 volte가 �
      SKT volte서버에서 ims_user_agent의 값을 체크하지 않는것으로 추정된다.  
 
 A-5. 본 문서의 패치방법을 기반으로 Pixel 3, Pixel 4, Pixel 4a도 패치가 될 것으로 예상된다.  
-     maigsk 빌드시 해당 기종에 맞게 소스를 변경하던지 장치관리자에서 9091로 잡힌 장치의 드라이버를 임의로 변경한다.
-     ```bash
-"    write /config/usb_gadget/g1/idVendor 0x05C6\n"  
-"    write /config/usb_gadget/g1/idProduct 0x9091\n"  
-     ```  
-     (모뎀별 드라이버는 기종별 소스에서 확인이 필요하다.)  
-     git clone https://android.googlesource.com/device/google/bonito  
-     p3 = "0x05C6", "0x90B6"  
-     p3a = "0x05C6", "0x9091"  
-     p4 = "0x05C6", "0x90B5"  
 <br>
 <br>
 
@@ -73,7 +63,6 @@ Magisk-20.1\Magisk-20.1\app\src\main\java\com\topjohnwu\magisk\tasks\MagiskInsta
 boot.img에 magisk를 덮어 쓸때 /sdcard/Download/build_magisk.zip 파일을 가져와 사용한다. 
 [(app-debug.apk)](https://github.com/gheron772/Pixel3aVoLTE/raw/master/files/app-debug.apk)
 
-B-3. 각 기종별 diag 드라이버는 AOSP 소스에서 /bonito/usb/UsbGadget.cpp의 내용을 확인하면 알 수 있다.(기종별 코드명)  
 <br>
 <br>
 

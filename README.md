@@ -61,7 +61,6 @@ ZipInputStream(context.readUri(Uri.parse("file:///sdcard/Download/build_magisk.z
 ```
 Magisk-20.1\Magisk-20.1\app\src\main\java\com\topjohnwu\magisk\tasks\MagiskInstaller.kt에 수정 후 빌드하면  
 boot.img에 magisk를 덮어 쓸때 /sdcard/Download/build_magisk.zip 파일을 가져와 사용한다. 
-[(app-debug.apk)](https://github.com/gheron772/Pixel3aVoLTE/raw/master/files/app-debug.apk)
 
 <br>
 <br>
